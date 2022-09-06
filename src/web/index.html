@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Urbexer</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Lukasz Nowakowski 189396" />
+    <meta name="description" content="ciekawe miejsca" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="web/static/style.css" />
+    <link type="image/x-icon" rel="icon" href="web/static/img/icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="web/static/img/logo.png" alt="logo" id="logo" />
+            <figcaption></figcaption>
+        </figure>
+    </header>
+    <nav>
+        <div class="dropdown" style="width:100%;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:white; color:black;">
+                Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="index.html">Strona główna</a></li>
+                <li><a class="dropdown-item" href="web/static/ruins.html">Opuszczone budowle</a></li>
+                <li><a class="dropdown-item" href="web/static/viewpoints.html">Punkty widokowe</a></li>
+                <li><a class="dropdown-item" href="../frontcontroller.php?action=/gallery">Galeria użytkowników</a></li>
+                <li><a class="dropdown-item" href="../frontcontroller.php?action=/login">Rejestracja</a></li>
+            </ul>
+            <a href="#logo" style="color:white;"><i class="fas fa-arrow-circle-up fa-3x" style="float:right; line-height:75px; padding-right:2%;"></i></a>
+        </div>
+        <div class="classic" style="width:100%;">
+            <a href="index.html">Strona głowna</a>
+            <a href="web/static/ruins.html">Opuszczone budowle</a>
+            <a href="web/static/viewpoints.html">Punkty widokowe</a>
+            <a href="/web/frontcontroller.php?action=/gallery">Galeria użytkowników</a>
+        </div>
+        <a href="../web/frontcontroller.php?action=/login" id="register"><i class="fas fa-user fa-lg"></i></a>
+    </nav>
+    <main>
+        <section class="quote">
+            <h3>Odkrywanie...</h3>
+            <p><i>Tutaj będzie</i></p>
+            <p><i>Kiedyś w przyszłości</i></p>
+            <p><i>Inspirująca myśl</i></p>
+            <p><i>O odkrywaniu</i></p>
+            <p>~ Konfucjusz (prawdopodobnie)</p>
+        </section>
+        <br />
+        <hr style="margin-left: 15%;" />
+        <section class="about">
+            <h3>Dla wszystkich miłośników zwiedzania i odkrywania nowych miejsc...</h3>
+            <p>Ta strona jest stworzona, by zgromadzić najciekawsze miejsca na Pomorzu. Zachęcam do dzielenia się wrażeniami oraz oceniania.</p>
+        </section>
+        <br />
+        <hr style="margin-left: 15%;" />
+        <section class="photos">
+            <h3>Zdjęcia</h3>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="web/static/img/slimak.jpg" alt="First slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="web/static/img/klif.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <br />
+        </section>
+    </main>
+    <footer>
+        <p>Łukasz Nowakowski 2021</p>
+    </footer>
+</body>
+</html>

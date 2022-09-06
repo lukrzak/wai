@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Urbexer - opuszczone miejsca</title>
+    <meta charset="utf-32"/>
+    <meta name="author" content="Lukasz Nowakowski 189396" />
+    <meta name="description" content="opuszczone budowle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="image/x-icon" rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+    <body onbeforeunload="return leavingMess()">
+        <header>
+            <figure>
+                <img src="img/logo.png" alt="logo" id="logo" />
+                <figcaption></figcaption>
+            </figure>
+        </header>
+        <nav>
+            <div class="dropdown" style="width:100%;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:white; color:black;">
+                    Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="index.html">Strona glówna</a></li>
+                    <li><a class="dropdown-item" href="ruins.html">Opuszczone budowle</a></li>
+                    <li><a class="dropdown-item" href="viewpoints.html">Punkty widokowe</a></li>
+                    <li><a class="dropdown-item" href="../../views/galleryView.php">Galeria uzytkowników</a></li>
+                    <li><a class="dropdown-item" href="../frontcontroller.php?action=/login">Rejestracja</a></li>
+                </ul>
+                <a href="#logo" style="color:white;"><i class="fas fa-arrow-circle-up fa-3x" style="float:right; line-height:75px; padding-right:2%;"></i></a>
+            </div>
+            <div class="classic" style="width:100%;" onclick="leavingMess()">
+                <a href="../../index.html">Strona glowna</a>
+                <a href="ruins.html">Opuszczone budowle</a>
+                <a href="viewpoints.html">Punkty widokowe</a>
+                <a href="/web/frontcontroller.php?action=/gallery">Galeria uzytkowników</a>
+            </div>
+            <a href="../frontcontroller.php?action=/login" id="register"><i class="fas fa-user fa-lg"></i></a>
+        </nav>
+        <main>
+            <div>
+                <article>
+                    <h3>Zamek - rezydencja, Lapalice</h3>
+                    <p>
+                        Budowla powstala jako szalony wytwór wyobrazni Piotra Kazimierczaka, producenta mebli i snycerza. Otrzymawszy pozwolenie na budowe domu jednorodzinnego
+                        z pracownia rzezbiarska, zainwestowal on w budowe rezydencji o powierzchni 5000 m<sup>2</sup>. Z powodów finansowych i niezgodnosci budynku z pozwoleniem na budowe, budowle podano do rozbiórki w 2006 roku. Mimo otaczajacego muru i zakazu wstepu, zamek jest licznie odwiedzany przez turystów i fanów urban exploringu.
+                    </p>
+                </article>
+                <aside>
+                    <figure>
+                        <img src="img/lapalice.jpg" alt="Zamek w lapalicach" />
+                        <figcaption>fot. Krzysztof Mystkowski dla portalu trojmiasto.pl</figcaption>
+                    </figure>
+                    <div class="rate" style="display:flex;" id="r1">
+                        <p>Ocen: </p>
+                        <i class="far fa-star 1" id="r11" onclick="calculateAverage(1,'avg1',0)"></i>
+                        <i class="far fa-star 2" id="r12" onclick="calculateAverage(2,'avg1',0)"></i>
+                        <i class="far fa-star 3" id="r13" onclick="calculateAverage(3,'avg1',0)"></i>
+                        <i class="far fa-star 4" id="r14" onclick="calculateAverage(4,'avg1',0)"></i>
+                        <i class="far fa-star 5" id="r15" onclick="calculateAverage(5,'avg1',0)"></i>
+                    </div>
+                    <br />
+                    <p id="avg1"></p>
+                </aside>
+
+            </div>
+            <br />
+            <hr style="margin-left:15%" />
+            <div>
+                <article>
+                    <h3>Opuszczone sanatorium, Gdynia</h3>
+                    <p>
+                        Dom Profilaktyczno-Wypoczynkowy "Zdrowie", potocznie zwany "sanatorium" jest polozony nad klifem w Gdyni Orlowo. Obiekt funkcjonowal jako dom wczasowo-leczniczy.W 2005 roku budynek przestal byc uzytkowany przez obsuwajacy sie klif. Meble i urzadzenia sanatorium zostaly zniszczone i skradzione. Jest to teren prywatny, dlatego wladze miasta nie moga wyburzyc budynku. Dla milosników i amatorów zwiedzania opuszczonych budowli mam jednak zla wiadomosc - obiekt jest zamkniety i chroniony przez alarmy.
+                    </p>
+                </article>
+                <aside>
+                    <figure>
+                        <img src="img/gdynia.jpg" alt="Opuszczone sanatorium w Gdynii" />
+                        <figcaption>fot. Lukasz Unterschuetz dla portalu trojmiasto.pl</figcaption>
+                    </figure>
+                    <div class="rate" style="display:flex;" id="r2">
+                        <p>Ocen: </p>
+                        <i class="far fa-star 1" id="r21" onclick="calculateAverage(1,'avg2',1)"></i>
+                        <i class="far fa-star 2" id="r22" onclick="calculateAverage(2,'avg2',1)"></i>
+                        <i class="far fa-star 3" id="r23" onclick="calculateAverage(3,'avg2',1)"></i>
+                        <i class="far fa-star 4" id="r24" onclick="calculateAverage(4,'avg2',1)"></i>
+                        <i class="far fa-star 5" id="r25" onclick="calculateAverage(5,'avg2',1)"></i>
+                    </div>
+                    <p id="avg2"></p>
+                    <br />
+                </aside>
+            </div>
+            <br />
+            <hr style="margin-left:15%" />
+            <div>
+                <article>
+                    <h3>Hotel Murat, Reda</h3>
+                    <p>
+                        Niegdys najpopularniejszy i najbardziej prestizowy hotel w okolicy, dziz rozpadajaca sie ruina. Budynek posiadal ponad 50 pokoi, duza sale konferencyjna oraz 4 apartamenty. Wlasciciel oglosil upadlosc w 2013 roku. Obiekt nie jest ogrodzony, ani chroniony w zaden sposób, dlatego szybko stal sie miejscem chetnie odwiedzanym przez okolicznych mieszkanców.
+                    </p>
+                    
+                </article>
+                <aside>
+                    <figure>
+                        <img src="img/murat.jpg" alt="Hotel Murat" />
+                        <figcaption>fot. Tajemnicza Polska moim okiem</figcaption>
+                    </figure>
+                    <div class="rate" style="display:flex;" id="r3">
+                        <p>Ocen: </p>
+                        <i class="far fa-star 1" id="r31" onclick="calculateAverage(1,'avg3',2)"></i>
+                        <i class="far fa-star 2" id="r32" onclick="calculateAverage(2,'avg3',2)"></i>
+                        <i class="far fa-star 3" id="r33" onclick="calculateAverage(3,'avg3',2)"></i>
+                        <i class="far fa-star 4" id="r34" onclick="calculateAverage(4,'avg3',2)"></i>
+                        <i class="far fa-star 5" id="r35" onclick="calculateAverage(5,'avg3',2)"></i>
+                    </div>
+                    <p id="avg3"></p>
+                    <br />
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <p>Lukasz Nowakowski 2021</p>
+            <p>Odwiedzanie wyzej wymienionych miejsc moze grozic konsekwencjami prawnymi lub zdrowotnymi. Strona ma charakter prezentacyjny, a autor nie zacheca do ich zwiedzania.</p>
+        </footer>
+        <script>
+            let opinionSet = false;
+            initNums = [0,0,0]
+            function calculateAverage(par, id, index) {
+                if (localStorage.getItem('avg') == null || localStorage.getItem('clicks') == null || localStorage.getItem('avg') == "0" || localStorage.getItem('clicks') == "0") {
+                    localStorage.setItem('avg', JSON.stringify(initNums));
+                    localStorage.setItem('clicks', JSON.stringify(initNums));
+                }
+                av = JSON.parse(localStorage.getItem('avg'));
+                cl = JSON.parse(localStorage.getItem('clicks'));
+                av[index] += par;
+                cl[index] += 1;
+                let x = Number(sessionStorage.getItem('sessionAvg')) + par;
+                let y = Number(sessionStorage.getItem('sessionClicks')) + 1;
+                sessionStorage.setItem('sessionAvg', String(x));
+                sessionStorage.setItem('sessionClicks', String(y));
+                document.getElementById(id).innerHTML = (av[index] / cl[index]).toFixed(2) + " / 5";
+                localStorage.setItem('avg', JSON.stringify(av));
+                localStorage.setItem('clicks', JSON.stringify(cl));
+                opinionSet = true;
+            }
+
+            let x = 0;
+            let articleId = 0;
+            $('document').ready(function () {
+                $('#r1').mouseover(function () {
+                    articleId = 1;
+                });
+                $('#r2').mouseover(function () {
+                    articleId = 2;
+                });
+                $('#r3').mouseover(function () {
+                    articleId = 3;
+                });
+            });
+
+            $('document').ready(function () {
+                $('.1').mouseover(function () {
+                    x = 1;
+                });
+                $('.2').mouseover(function () {
+                    x = 2;
+                });
+                $('.3').mouseover(function () {
+                    x = 3;
+                });
+                $('.4').mouseover(function () {
+                    x = 4;
+                });
+                $('.5').mouseover(function () {
+                    x = 5;
+                });
+            });
+
+            $('document').ready(function () {
+                $('.rate').mouseover(function () {
+                    for (var i = 1; i <= x; i++) {
+                        var id = '#r' + String(articleId) + ' > #r' + String(articleId) + "" + String(i)
+                        $(id).css('color', 'yellow');
+                        $(id).attr('class', 'fas fa-star');
+                    }
+                }).mouseout(function () {
+                    for (var i = 1; i <= 5; i++) {
+                        var id = '#r' + String(articleId) + ' > #r' + String(articleId) + "" + String(i)
+                        $(id).css('color', '#1a6582');
+                        $(id).attr('class', 'far fa-star');
+                    }
+                });
+            });
+
+            function leavingMess() {
+                if (sessionStorage.getItem('sessionClicks') != '0' && opinionSet) {
+                    alert("Wystawiono " + sessionStorage.getItem('sessionClicks') + " opini(e) o sredniej " +
+                        ((Number(sessionStorage.getItem('sessionAvg'))) / Number(sessionStorage.getItem('sessionClicks'))).toFixed(2));
+                    opinionSet = false;
+                }  
+            }
+        </script>
+    </body>
+</html>
